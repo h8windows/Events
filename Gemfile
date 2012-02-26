@@ -12,6 +12,7 @@ gem 'rspec-core', '2.7.1'
 
 gem 'json'
 
+
 # Gems used only for assets and not required
 # in production environments by default.
 group :assets do
@@ -21,6 +22,28 @@ group :assets do
 end
 
 gem 'jquery-rails'
+
+group :development do
+  gem 'rspec-rails', '2.7.0'
+end
+
+group :test do
+  gem 'rspec-rails', '2.7.0'
+  gem 'webrat', '0.7.1'
+  gem 'spork', '0.9.0.rc9'
+  gem 'rspec-core', '2.7.1'
+  gem 'cucumber-rails', '1.2.0'
+  gem 'capybara'
+  gem 'database_cleaner'
+  gem 'email_spec'
+  gem 'factory_girl'
+end
+
+gem 'devise', '~> 1.4.3'
+gem 'cancan', '1.6.5'
+gem 'paperclip'
+gem 'tinymce-rails'
+
 
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
